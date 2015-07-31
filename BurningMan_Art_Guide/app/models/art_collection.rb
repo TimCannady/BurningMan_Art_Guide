@@ -1,10 +1,6 @@
 class ArtCollection < ActiveRecord::Base
 
-    attr_accessor :installations
-
-    def initialize
-      @installations = []
-    end
+    # attr_accessor :installations
 
     def query_all_installations(html_file) ## parse every installations
       html_file.search('.newitem').map
@@ -24,7 +20,9 @@ class ArtCollection < ActiveRecord::Base
           :email => get_email(installation),
           :donate_link => get_donate_link(installation)
         }
-        art_collection.installations << ArtInstallation.new(content_hash)
+
+        ArtInstallation.create(content_hash)
+
       end
     end
 

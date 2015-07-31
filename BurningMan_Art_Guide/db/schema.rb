@@ -22,16 +22,16 @@ ActiveRecord::Schema.define(version: 20150731012710) do
   end
 
   create_table "art_installations", force: :cascade do |t|
-    t.string   "content"
     t.string   "installation_name"
+    t.string   "installation_description"
     t.string   "artist_name"
     t.string   "artist_location"
     t.string   "url"
     t.string   "photo_url"
     t.string   "email"
     t.string   "donate_link"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
 end

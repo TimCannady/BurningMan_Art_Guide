@@ -1,8 +1,9 @@
 class CreateArtInstallations < ActiveRecord::Migration
   def change
     create_table :art_installations do |t|
-      t.string :content
+      # t.string :content
       t.string :installation_name
+      t.string :installation_description
       t.string :artist_name
       t.string :artist_location
       t.string :url

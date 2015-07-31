@@ -1,10 +1,8 @@
 parsed_file = Nokogiri::HTML(File.open('lib/assets/art_installations.html'))
 
-bm_2015_art_object = ArtCollection.new
+bm_2015_art_object = ArtCollection.create
 
 bm_2015_art_object.installation_creator(parsed_file,bm_2015_art_object)
-
-
 
 
 #-------------- Driver Tests -----------------#
