@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+
+ .body_wrapper{
+  /*text-align: center;*/
+ }
+
+
+.installation_wrapper {
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 1%;
+  text-align: center;
+  width: 50%;
+
+}
