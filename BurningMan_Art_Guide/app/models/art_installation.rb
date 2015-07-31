@@ -3,7 +3,7 @@ class ArtInstallation < ActiveRecord::Base
     attr_reader :content, :installation_name, :installation_description, :artist_name, :artist_location
 
     def initialize(options = {})
-    @content = options.fetch(:content)
+    @content = options.fetch(:content, "no content")
 
     @installation_name = options.fetch(:installation_name,"no installation name"),
     @installation_description = options.fetch(:installation_description,"no description"),

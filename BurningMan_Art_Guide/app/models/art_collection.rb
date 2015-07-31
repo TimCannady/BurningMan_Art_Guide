@@ -14,7 +14,7 @@ class ArtCollection < ActiveRecord::Base
       array_of_art = query_all_installations(html_file)
       array_of_art.each do |installation|
         content_hash = {
-          :content => installation,
+          # :content => installation,
           :installation_name => get_installation_name(installation),
           :installation_description => get_installation_description(installation),
           :artist_name => get_artist_name(installation),
