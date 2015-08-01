@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
 
+# from Adam's tutorial
+ # ACCEPTS_JSON = lambda {|request|
+ #    request.accepts.include?(:json)
+ #  }
 
-  get 'tacos/show' to: 'tacos#show'
+ #  scope constraints: ACCEPTS_JSON do
+ #    resource :users
+ #  end
+
+  get 'tacos/show', to: 'tacos#show'
 
   get 'art_installations', to: "art_installations#index"
 

@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require react
 //= require react_ujs
 //= require_tree ./components
@@ -31,3 +30,4 @@ var App = React.createClass({
 });
 
 React.render(<App/>, document.body);
+// React.render(<App/>, document.getElementById('react_div')
