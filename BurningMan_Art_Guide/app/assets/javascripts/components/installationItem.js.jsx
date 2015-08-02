@@ -2,7 +2,7 @@ var InstallationItem = React.createClass({
   render: function(){
     return (
       <div>
-       {this.props.data}
+       {this.props.installations}
       </div>
       )
   }

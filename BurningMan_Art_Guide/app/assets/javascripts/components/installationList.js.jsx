@@ -4,7 +4,9 @@ var InstallationList = React.createClass({
     var artPieces =  this.props.installations
 
     return (
-        <InstallationItem data={artPieces} />
+        <div className="installation_wrapper">
+          <InstallationItem installations={artPieces} />
+        </div>
       );
   }
 });
