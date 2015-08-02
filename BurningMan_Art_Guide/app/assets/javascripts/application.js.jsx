@@ -19,11 +19,11 @@
 //= require_self
 
 
-React.render( < App installations={FAKE_INSTALLATIONS} />, document.body);
+React.render( <App installations={"TESTTEST"} />, document.body);
 // React.render(<App/>, document.body);
 // React.render(<App/>, document.getElementById('react_div')
 
-  FAKE_INSTALLATIONS = [
+  FAKEINSTALLATIONS = [
     {
       installation_name: 'Tims Art Piece',
       installation_description: 'sweet art piece',
@@ -32,4 +32,4 @@ React.render( < App installations={FAKE_INSTALLATIONS} />, document.body);
       url: 'www.google.com',
       photo_url: 'www.imgur.com',
       email: 'timcannady@gmail.com',
-      donate_link: 'www.donate.com' } ]
+      donate_link: 'www.donate.com' }]
