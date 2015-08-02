@@ -1,10 +1,10 @@
 var InstallationList = React.createClass({
   render: function(){
 
-    var nodes = this.props.installations
+    var artPieces =  this.props.installations
 
     return (
-      <div>nodes: {nodes}</div>
+        <InstallationItem data={artPieces} />
       );
   }
 });
