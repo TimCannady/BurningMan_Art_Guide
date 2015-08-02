@@ -14,6 +14,12 @@
  *= require_self
  */
 
+ body{
+  background-image: url('bm.jpg');
+  background-size: 100%;
+
+ }
+
  .body_wrapper{
   /*text-align: center;*/
  }
@@ -28,7 +34,10 @@
   position: fixed;
   top: 0;
   right: 0;
-  border: 1px solid lightgrey;
+  height: 100%;
+  /*background-color: skyblue;*/
+  /*opacity: 0.1;*/
+  /*border: 1px solid lightgrey;*/
 }
 
 
@@ -42,6 +51,7 @@
   padding: 1%;
   display: inline-block;
   vertical-align: top;
+  background-color: lightgrey;
   border: 1px solid lightgrey;
 }
 
@@ -53,6 +63,7 @@
   padding: 1%;
   display: inline-block;
   vertical-align: top;
+  background-color: lightgrey;
   /*border: 1px solid lightgrey;*/
 }
 
