@@ -25,22 +25,21 @@
 
 
 .installation_wrapper {
-  border: 1px solid black;
   /*margin: auto;*/
   margin: 1%;
-  text-align: center;
+  /*text-align: center;*/
   width: 30%;
   padding: 1%;
   display: inline-block;
   vertical-align: top;
-
+  border: 1px solid lightgrey;
 }
 
 .installation_img {
-  width: 50%;
-  border: 1px solid skyblue;
+  width: 100%;
+  /*border: 1px solid skyblue;*/
 }
 
 .tour_box{
-  border: 1px solid yellow;
+  border: 1px solid lightgrey;
 }
