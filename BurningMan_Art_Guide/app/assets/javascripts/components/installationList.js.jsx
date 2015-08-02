@@ -6,7 +6,7 @@ var InstallationList = React.createClass({
     })
 
     return (
-        <div className="installation_wrapper">
+        <div>
           {artInstallations}
         </div>
       );

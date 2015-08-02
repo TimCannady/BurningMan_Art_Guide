@@ -1,7 +1,7 @@
 var InstallationItem = React.createClass({
   render: function(){
     return (
-      <div>
+      <div className="installation_wrapper">
         <p>{this.props.installation_name}</p>
         <img src={this.props.photo_url}></img>
         <p>{this.props.installation_description}</p>
