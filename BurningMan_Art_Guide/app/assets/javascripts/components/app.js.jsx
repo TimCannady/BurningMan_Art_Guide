@@ -23,7 +23,7 @@ var App = React.createClass({
       <div>
         <InstallationList installations={this.props.installations}/>
         {/*<InstallationList installations={this.request}/>*/}
-        {/*<TourList/>*/}
+        <TourList/>
       </div>
     );
   }

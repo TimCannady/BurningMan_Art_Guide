@@ -6,7 +6,7 @@ var InstallationList = React.createClass({
     })
 
     return (
-        <div className="installation_box">
+        <div className="col-md-8 installation_box">
           {artInstallations}
         </div>
       );

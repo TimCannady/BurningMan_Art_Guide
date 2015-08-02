@@ -20,7 +20,6 @@
  }
 
  .installation_box{
-  width: 60%;
   border: 1px solid red;
  }
 
@@ -40,4 +39,8 @@
 .installation_img {
   width: 50%;
   border: 1px solid skyblue;
+}
+
+.tour_box{
+  border: 1px solid yellow;
 }
