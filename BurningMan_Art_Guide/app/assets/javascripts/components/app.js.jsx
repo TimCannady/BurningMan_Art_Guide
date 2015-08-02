@@ -6,10 +6,10 @@ var App = React.createClass({
 
   addToTourGuide: function(item){
     this.state.tourGuide.push(item);
-    this.setState({currentTeam: this.state.currentTeam})
+    this.setState({tourGuide: this.state.tourGuide})
   },
 
-  request: function(action, method, data){
+  /*request: function(action, method, data){
      return new Promise(function(resolve, reject){
        request = $.ajax({
          url:      action,
@@ -26,14 +26,14 @@ var App = React.createClass({
          reject(serverData)
        });
      });
-   },
+   },*/
 
   render: function(){
     return (
       <div>
         <InstallationList installations={this.props.installations} addToTourGuide={this.addToTourGuide} />
         {/*<InstallationList installations={this.request}/>*/}
-        <TourList/>
+        <TourList installations={this.state.tourGuide}  />
       </div>
     );
   }
