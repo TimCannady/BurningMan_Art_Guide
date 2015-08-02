@@ -1,4 +1,9 @@
 var InstallationList = React.createClass({
+
+  addToTourGuide: function(item){
+    this.props.addToTourGuide(item)
+  },
+
   render: function(){
 
     artInstallations = this.props.installations.map(function(installation){
