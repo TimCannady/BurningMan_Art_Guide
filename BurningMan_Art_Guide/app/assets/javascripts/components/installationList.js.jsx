@@ -1,4 +1,9 @@
 var InstallationList = React.createClass({
+
+  addToTourGuide: function(item){
+    this.props.addToTourGuide(item)
+  },
+
   render: function(){
 
     artInstallations = this.props.installations.map(function(installation){
@@ -6,7 +11,8 @@ var InstallationList = React.createClass({
     })
 
     return (
-        <div className="installation_box">
+        <div className="col-md-8 installation_box">
+          <h3>Art Installations</h3>
           {artInstallations}
         </div>
       );

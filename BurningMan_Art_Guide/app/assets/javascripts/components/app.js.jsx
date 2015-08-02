@@ -1,4 +1,14 @@
 var App = React.createClass({
+
+  getInitialState: function(){
+    return{ tourGuide: [] }
+  },
+
+  addToTourGuide: function(item){
+    this.state.tourGuide.push(item);
+    this.setState({currentTeam: this.state.currentTeam})
+  },
+
   request: function(action, method, data){
      return new Promise(function(resolve, reject){
        request = $.ajax({
@@ -21,9 +31,9 @@ var App = React.createClass({
   render: function(){
     return (
       <div>
-        <InstallationList installations={this.props.installations}/>
+        <InstallationList installations={this.props.installations} addToTourGuide={this.addToTourGuide} />
         {/*<InstallationList installations={this.request}/>*/}
-        {/*<TourList/>*/}
+        <TourList/>
       </div>
     );
   }
