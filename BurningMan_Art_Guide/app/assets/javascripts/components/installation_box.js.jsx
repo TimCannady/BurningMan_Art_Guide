@@ -2,8 +2,8 @@ var InstallationBox = React.createClass({
   render: function(){
     return (
       <div>
-        installation
+        installation box
       </div>
-    );
+      );
   }
 });

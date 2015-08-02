@@ -19,6 +19,6 @@
 //= require_self
 
 
-React.render(<InstallationBox/>, document.body);
+React.render(<App/>, document.body);
 // React.render(<App/>, document.body);
 // React.render(<App/>, document.getElementById('react_div')
