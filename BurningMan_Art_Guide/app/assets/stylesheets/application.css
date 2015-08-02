@@ -19,12 +19,25 @@
   /*text-align: center;*/
  }
 
+ .installation_box{
+  width: 60%;
+  border: 1px solid red;
+ }
+
 
 .installation_wrapper {
   border: 1px solid black;
-  margin: auto;
-  margin-bottom: 1%;
+  /*margin: auto;*/
+  margin: 1%;
   text-align: center;
-  width: 50%;
+  width: 30%;
+  padding: 1%;
+  display: inline-block;
+  vertical-align: top;
 
+}
+
+.installation_img {
+  width: 50%;
+  border: 1px solid skyblue;
 }
