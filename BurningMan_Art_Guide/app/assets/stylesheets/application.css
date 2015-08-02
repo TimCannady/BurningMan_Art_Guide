@@ -14,20 +14,27 @@
  *= require_self
  */
 
-
  .body_wrapper{
   /*text-align: center;*/
  }
 
+
+
  .installation_box{
-  /*border: 1px solid red;*/
+  /*border: 1px solid lightgrey;*/
  }
+
+ .tour_box{
+  /*border: 1px solid lightgrey;*/
+}
+
+
 
 
 .installation_wrapper {
   /*margin: auto;*/
-  margin: 1%;
   /*text-align: center;*/
+  margin: 1%;
   width: 30%;
   padding: 1%;
   display: inline-block;
@@ -35,11 +42,25 @@
   border: 1px solid lightgrey;
 }
 
-.installation_img {
-  width: 100%;
-  /*border: 1px solid skyblue;*/
+.tour_item_wrapper{
+  /*margin: auto;*/
+  /*text-align: center;*/
+  margin: 1%;
+  width: 30%;
+  padding: 1%;
+  display: inline-block;
+  vertical-align: top;
+  /*border: 1px solid lightgrey;*/
 }
 
-.tour_box{
-  border: 1px solid lightgrey;
+
+
+.installation_img {
+  width: 100%;
+  border: 1px solid skyblue;
+}
+
+.tour_img{
+  width: 100%;
+  border: 1px solid skyblue;
 }
