@@ -1,7 +1,7 @@
 var InstallationItem = React.createClass({
 
   handleClick: function(){
-    this.props.addToTourGuide({installation_name: this.props.installation_name})
+    this.props.addToTourGuide({installation_name: this.props.installation_name, photo_url: this.props.photo_url})
   },
 
   render: function(){
