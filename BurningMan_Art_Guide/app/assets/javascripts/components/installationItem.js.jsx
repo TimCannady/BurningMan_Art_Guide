@@ -16,7 +16,8 @@ var InstallationItem = React.createClass({
         <a href={this.props.url}> Website </a>
         -
         <a href={this.props.donate_link}> Donate </a>
-        <button type="button" className="addToTeam btn btn-primary" onClick={this.handleClick}>Add To Tour Guide</button>
+        <br/>
+        <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick}>Add To Tour Guide</button>
       </div>
       )
   }

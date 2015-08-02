@@ -25,7 +25,10 @@
  }
 
  .tour_box{
-  /*border: 1px solid lightgrey;*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 1px solid lightgrey;
 }
 
 
