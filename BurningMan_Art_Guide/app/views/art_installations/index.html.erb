@@ -1,14 +1,2 @@
-<div class="body_wrapper">
-  <% @art_installations.each do |installation| %>
-    <div class="installation_wrapper">
-      <p> <%= installation.installation_name %> </p>
-      <img src=" <%= installation.photo_url %> "></img>
-      <p> <%= installation.installation_description %> </p>
-      <p> <%= installation.artist_name %> </p>
-      <p> <%= installation.artist_location %> </p>
-      <p> <%= installation.url %> </p>
-      <p> <%= installation.email %> </p>
-      <p> <%= installation.donate_link %> </p>
-    </div>
-  <% end %>
-</div>
+
+<%= react_component 'App', {installations: @art_installations} %>
