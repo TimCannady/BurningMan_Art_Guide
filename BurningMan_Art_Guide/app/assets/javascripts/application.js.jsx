@@ -19,15 +19,6 @@
 //= require_self
 
 
-var App = React.createClass({
-  render: function(){
-    return (
-      <div>
-        taco
-      </div>
-    );
-  }
-});
-
-React.render(<App/>, document.body);
+React.render(<InstallationBox/>, document.body);
+// React.render(<App/>, document.body);
 // React.render(<App/>, document.getElementById('react_div')
