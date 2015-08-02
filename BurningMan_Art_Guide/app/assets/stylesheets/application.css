@@ -14,32 +14,67 @@
  *= require_self
  */
 
+ body{
+  background-image: url('bm.jpg');
+  background-size: 100%;
+
+ }
 
  .body_wrapper{
   /*text-align: center;*/
  }
 
+
+
  .installation_box{
-  border: 1px solid red;
+  /*border: 1px solid lightgrey;*/
  }
+
+ .tour_box{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  /*background-color: skyblue;*/
+  /*opacity: 0.1;*/
+  /*border: 1px solid lightgrey;*/
+}
+
+
 
 
 .installation_wrapper {
   /*margin: auto;*/
-  margin: 1%;
   /*text-align: center;*/
+  margin: 1%;
   width: 30%;
   padding: 1%;
   display: inline-block;
   vertical-align: top;
+  background-color: lightgrey;
   border: 1px solid lightgrey;
 }
+
+.tour_item_wrapper{
+  /*margin: auto;*/
+  /*text-align: center;*/
+  margin: 1%;
+  width: 30%;
+  padding: 1%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: lightgrey;
+  /*border: 1px solid lightgrey;*/
+}
+
+
 
 .installation_img {
   width: 100%;
-  /*border: 1px solid skyblue;*/
+  border: 1px solid skyblue;
 }
 
-.tour_box{
-  border: 1px solid lightgrey;
+.tour_img{
+  width: 100%;
+  border: 1px solid skyblue;
 }
