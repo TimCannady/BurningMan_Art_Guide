@@ -1,4 +1,9 @@
 var InstallationItem = React.createClass({
+
+  handleClick: function(){
+    this.props.addToTourGuide({installation_name: this.props.installation_name})
+  },
+
   render: function(){
     return (
       <div className="installation_wrapper">
@@ -11,6 +16,7 @@ var InstallationItem = React.createClass({
         <a href={this.props.url}> Website </a>
         -
         <a href={this.props.donate_link}> Donate </a>
+        <button type="button" className="addToTeam btn btn-primary" onClick={this.handleClick}>Add To Tour Guide</button>
       </div>
       )
   }
