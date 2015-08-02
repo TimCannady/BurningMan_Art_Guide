@@ -18,8 +18,7 @@
 //= require_tree .
 //= require_self
 
-
-  FAKEINSTALLATIONS = [
+  FAKE_INSTALLATIONS = [
     {
       installation_name: 'Tims Art Piece',
       installation_description: 'sweet art piece',
@@ -31,9 +30,4 @@
       donate_link: 'www.donate.com' }]
 
 
-React.render( <App installations={FAKEINSTALLATIONS} />, document.body);
-// React.render(<App/>, document.body);
-// React.render(<App/>, document.getElementById('react_div')
-
-
-
+React.render( <App installations={FAKE_INSTALLATIONS} />, document.body);
