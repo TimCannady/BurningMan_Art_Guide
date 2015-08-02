@@ -2,8 +2,8 @@ var App = React.createClass({
   render: function(){
     return (
       <div>
-        <InstallationBox/>
-        <TourBox/>
+        <InstallationList installations={this.props.installations} />
+        <TourList/>
       </div>
     );
   }

@@ -1,8 +1,8 @@
-var TourBox = React.createClass({
+var TourList = React.createClass({
   render: function(){
     return(
       <div>
-        tour box
+        tour list
       </div>
       );
   }
