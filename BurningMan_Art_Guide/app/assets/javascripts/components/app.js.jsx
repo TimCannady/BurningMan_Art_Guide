@@ -17,25 +17,6 @@ var App = React.createClass({
     this.setState({createdTour: this.state.createdTour});
   },
 
-  /*request: function(action, method, data){
-     return new Promise(function(resolve, reject){
-       request = $.ajax({
-         url:      action,
-         method:   method,
-         data:     data,
-         dataType: "json"
-       });
-
-       request.done(function(serverData){
-         resolve(serverData)
-       });
-
-       request.fail(function(serverData){
-         reject(serverData)
-       });
-     });
-   },*/
-
 
   render: function(){
     return (

@@ -4,6 +4,8 @@ var TourList = React.createClass({
     this.props.createTour({createdTour: true});
   },
 
+
+
   render: function(){
     that = this;
     var tourInstallations = this.props.installations.map(function(installation,index){
