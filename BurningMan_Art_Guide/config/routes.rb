@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'installations/:id', to: "installation#show"
 
   post 'tours', to: "tours#create"
+  post 'tours', to: "tours#create"
 
   get 'tours/:id', to: "tours#show"
 
