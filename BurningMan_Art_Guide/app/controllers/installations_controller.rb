@@ -1,5 +1,7 @@
 class InstallationsController < ApplicationController
 
+
+
   def index
     @art_installations = Installation.all
     @art_installations = Installation.all
