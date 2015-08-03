@@ -14,7 +14,7 @@ var TourList = React.createClass({
       <div className="col-md-4 tour_box">
         <div >
           <h3>My Tour Guide</h3>
-         <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick}>Create Tour</button>
+         <button type="button" className="create_tour_button btn btn-info" onClick={this.handleClick}>Create Tour</button>
          <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick}>Save Tour</button>
 
         </div>

@@ -36,10 +36,12 @@ var App = React.createClass({
      });
    },*/
 
+
   render: function(){
     return (
       <div>
         <InstallationList installations={this.props.installations} addToTourGuide={this.addToTourGuide} createdTour={this.state.createdTour} />
+
         <TourList installations={this.state.tourGuide} createTour={this.createTour} />
       </div>
     );
