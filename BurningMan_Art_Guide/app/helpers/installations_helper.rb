@@ -1,0 +1,2 @@
+module InstallationsHelper
+end

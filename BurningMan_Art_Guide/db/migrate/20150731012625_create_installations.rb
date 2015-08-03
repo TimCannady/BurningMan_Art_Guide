@@ -1,6 +1,6 @@
-class CreateArtInstallations < ActiveRecord::Migration
+class CreateInstallations < ActiveRecord::Migration
   def change
-    create_table :art_installations do |t|
+    create_table :installations do |t|
       # t.string :content
       t.string :installation_name
       t.string :installation_description

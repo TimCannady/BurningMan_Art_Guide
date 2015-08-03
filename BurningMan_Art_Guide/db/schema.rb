@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150731012710) do
+ActiveRecord::Schema.define(version: 20150802235346) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "art_collections", force: :cascade do |t|
+  create_table "collections", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "art_installations", force: :cascade do |t|
+  create_table "installations", force: :cascade do |t|
     t.string   "installation_name"
     t.string   "installation_description"
     t.string   "artist_name"
@@ -32,6 +32,18 @@ ActiveRecord::Schema.define(version: 20150731012710) do
     t.string   "donate_link"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+  end
+
+  create_table "tours", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tours_installations", force: :cascade do |t|
+    t.integer  "tour_id"
+    t.integer  "installation_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

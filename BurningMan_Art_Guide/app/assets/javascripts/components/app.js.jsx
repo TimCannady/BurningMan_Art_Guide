@@ -1,12 +1,20 @@
 var App = React.createClass({
 
   getInitialState: function(){
-    return{ tourGuide: [] }
+    return {
+      tourGuide: [],
+      createdTour: false
+    }
   },
 
   addToTourGuide: function(item){
     this.state.tourGuide.push(item);
     this.setState({tourGuide: this.state.tourGuide})
+  },
+
+  createTour: function(tour){
+    this.state.createdTour = true;
+    this.setState({createdTour: this.state.createdTour});
   },
 
   /*request: function(action, method, data){
@@ -28,12 +36,13 @@ var App = React.createClass({
      });
    },*/
 
+
   render: function(){
     return (
       <div>
-        <InstallationList installations={this.props.installations} addToTourGuide={this.addToTourGuide} />
-        {/*<InstallationList installations={this.request}/>*/}
-        <TourList installations={this.state.tourGuide}  />
+        <InstallationList installations={this.props.installations} addToTourGuide={this.addToTourGuide} createdTour={this.state.createdTour} />
+
+        <TourList installations={this.state.tourGuide} createTour={this.createTour} />
       </div>
     );
   }

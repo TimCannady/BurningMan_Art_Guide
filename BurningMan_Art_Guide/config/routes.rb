@@ -9,9 +9,9 @@ Rails.application.routes.draw do
     resource :users
   end
 
-  get 'art_installations', to: "art_installations#index"
+  get 'installations', to: "installations#index"
 
-  get 'art_installations/:id', to: "art_installations#show"
+  get 'installations/:id', to: "installations#show"
 
-  root "art_installations#index"
+  root "installations#index"
 end
