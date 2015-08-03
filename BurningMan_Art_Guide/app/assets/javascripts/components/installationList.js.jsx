@@ -12,7 +12,7 @@ var InstallationList = React.createClass({
 
     return (
         <div className="col-md-8 installation_box">
-            {alert(this.props.createdTour)}
+            {/*{alert(this.props.createdTour)}*/}
             <h3>Art Installations</h3>
             {artInstallations}
         </div>

@@ -20,7 +20,7 @@ var InstallationItem = React.createClass({
 
 
 
-        <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick} disabled={!this.props.createdTour} >
+        <button type="button" action="/" className="add_tour_button btn btn-info" onClick={this.handleClick} disabled={!this.props.createdTour} >
           Add To Tour Guide
         </button>
 
