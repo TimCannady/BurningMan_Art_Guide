@@ -3,13 +3,13 @@ var App = React.createClass({
   getInitialState: function(){
     return {
       path: location.pathname,
+
     }
   },
 
   componentDidMount: function(){
     $(window).on('pushstate popstate', this.pathChange);
   },
-
   componentWillUnmount: function(){
     $(window).off('pushstate popstate', this.pathChange);
   },
@@ -26,6 +26,9 @@ var App = React.createClass({
 
 App.router = function(path){
   if (path === '/')                   return <HomePage />;
-  if (path === '/tours/new')          return <NewTourPage />;
-  if (path.match(/^\/tours\/(\d+)$/)) return <TourShowPage tour_id={RegExp.$1} />;
+  if (path.match(/^\/tours\/(\d+)\/edit$/)) return <TourEditPage  tour_id={RegExp.$1} />;
+  if (path.match(/^\/tours\/(\d+)\/saved$/)) return <TourSavedPage tour_id={RegExp.$1} />;
+  if (path.match(/^\/tours\/(\d+)$/)) return <TourShowPage  tour_id={RegExp.$1} />;
 };
+
+
