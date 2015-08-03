@@ -6,8 +6,8 @@ var TourList = React.createClass({
 
   render: function(){
     that = this;
-    var artInstallations = this.props.installations.map(function(installation,index){
-        return <TourItem key={index} installation_name={installation.installation_name} installation_description={installation.installation_description} artist_name={installation.artist_name} artist_location={installation.artist_location} url={installation.url} photo_url={installation.photo_url} email={installation.email} donate_link={installation.donate_link} addToTourGuide={that.addToTourGuide} />
+    var tourInstallations = this.props.installations.map(function(installation,index){
+        return <TourItem key={index} installation_name={installation.installation_name} installation_description={installation.installation_description} artist_name={installation.artist_name} artist_location={installation.artist_location} url={installation.url} photo_url={installation.photo_url} email={installation.email} donate_link={installation.donate_link}  />
     })
 
     return(
@@ -22,8 +22,18 @@ var TourList = React.createClass({
          <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick}>Save Tour</button>
 
         </div>
-        {artInstallations}
+        {tourInstallations}
       </div>
       );
   }
 });
+
+
+// ---------Steps to save a tour----------- //
+// when a user clicks the Save Tour button,
+// the tourGuide state houses all the installations the user added to their tour.
+// package that up and POST it to "/tours." This triggers the Tour controller where
+// it will generate a new Tour object.
+// I'm not sure how it will receive the tourGuide state. Format, params, etc.
+// Create a new Tour object, redirect the user to the page and give them a link so
+// they can return to it.

@@ -42,6 +42,8 @@ var App = React.createClass({
       <div>
         <InstallationList installations={this.props.installations} addToTourGuide={this.addToTourGuide} createdTour={this.state.createdTour} />
 
+
+
         <TourList installations={this.state.tourGuide} createTour={this.createTour} />
       </div>
     );

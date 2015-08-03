@@ -5,8 +5,14 @@ class ToursController < ApplicationController
   def show
   end
 
-  def create
-    render 'installations/index'
+  # def create
+  #   @tour = Tour.create
+  # end
+
+  def save ## does both create and save for now...
+    @tour = Tour.create
+    @tour << params
+    render "tours/#{@tour.id}"
   end
 
 end
