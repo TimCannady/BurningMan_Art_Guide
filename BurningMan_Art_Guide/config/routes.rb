@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   end
 
   get '*path', to: "client_app#show"
+
   root to: "client_app#show"
 end
