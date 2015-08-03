@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get 'installations/:id', to: "installation#show"
 
+  post 'tours', to: "installations#index"
+
   get 'tours/:id', to: "tours#show"
 
   root "installations#index"

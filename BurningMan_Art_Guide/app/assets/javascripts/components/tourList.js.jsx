@@ -1,7 +1,7 @@
 var TourList = React.createClass({
 
   handleClick: function(){
-    this.props.createTour({createdTour: true})
+    this.props.createTour({createdTour: true});
   },
 
   render: function(){
@@ -12,9 +12,15 @@ var TourList = React.createClass({
 
     return(
       <div className="col-md-4 tour_box">
-        <div >
+        <div>
           <h3>My Tour Guide</h3>
-         <button type="button" className="create_tour_button btn btn-info" onClick={this.handleClick}>Create Tour</button>
+
+          <form action="tours" method="post">
+            <input type="submit" value="Create Tour" className="create_tour_button btn btn-info" onClick={this.handleClick}></input>
+          </form>
+
+          {/*<button type="button" className="create_tour_button btn btn-info" onClick={this.handleClick}>Create Tour</button>*/}
+
          <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick}>Save Tour</button>
 
         </div>
