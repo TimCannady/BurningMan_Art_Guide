@@ -5,9 +5,9 @@ class ToursController < ApplicationController
   def show
   end
 
-  # def create
-  #   @tour = Tour.create
-  # end
+  def create
+    tour = Tour.new(params[:tour])
+  end
 
   def save ## does both create and save for now...
     @tour = Tour.create

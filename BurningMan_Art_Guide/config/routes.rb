@@ -1,21 +1,14 @@
 Rails.application.routes.draw do
 
-# from Adam's tutorial
- # ACCEPTS_JSON = lambda {|request|
- #    request.accepts.include?(:json)
- #  }
+  ACCEPTS_JSON = lambda {|request|
+    request.accepts.include?(:json)
+  }
 
- #  scope constraints: ACCEPTS_JSON do
- #    resource :users
- #  end
+  scope constraints: ACCEPTS_JSON do
+    resources :tours
+    resources :installations, only: [:index]
+  end
 
-  get 'installations', to: "installation#index"
-
-  get 'installations/:id', to: "installation#show"
-
-  post 'tours', to: "tours#create"
-
-  get 'tours/:id', to: "tours#show"
-
-  root "installations#index"
+  get '*path', to: "client_app#show"
+  root to: "client_app#show"
 end

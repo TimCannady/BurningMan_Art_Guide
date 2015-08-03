@@ -2,31 +2,30 @@ var App = React.createClass({
 
   getInitialState: function(){
     return {
-      tourGuide: [],
-      createdTour: false
+      path: location.pathname,
     }
   },
 
-  addToTourGuide: function(item){
-    this.state.tourGuide.push(item);
-    this.setState({tourGuide: this.state.tourGuide})
+  componentDidMount: function(){
+    $(window).on('pushstate popstate', this.pathChange);
   },
 
-  createTour: function(tour){
-    this.state.createdTour = true;
-    this.setState({createdTour: this.state.createdTour});
+  componentWillUnmount: function(){
+    $(window).off('pushstate popstate', this.pathChange);
   },
 
+  pathChange: function(){
+    this.setState({path: location.pathname})
+  },
 
   render: function(){
-    return (
-      <div>
-        <InstallationList installations={this.props.installations} addToTourGuide={this.addToTourGuide} createdTour={this.state.createdTour} />
-
-
-
-        <TourList installations={this.state.tourGuide} createTour={this.createTour} />
-      </div>
-    );
+    return App.router(this.state.path);
   }
 });
+
+
+App.router = function(path){
+  if (path === '/')                   return <HomePage />;
+  if (path === '/tours/new')          return <NewTourPage />;
+  if (path.match(/^\/tours\/(\d+)$/)) return <TourShowPage tour_id={RegExp.$1} />;
+};
