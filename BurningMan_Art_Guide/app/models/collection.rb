@@ -1,4 +1,4 @@
-class ArtCollection < ActiveRecord::Base
+class Collection < ActiveRecord::Base
 
     # attr_accessor :installations
 
@@ -21,7 +21,7 @@ class ArtCollection < ActiveRecord::Base
           :donate_link => get_donate_link(installation)
         }
 
-        ArtInstallation.create(content_hash)
+        Installation.create(content_hash)
 
       end
     end
