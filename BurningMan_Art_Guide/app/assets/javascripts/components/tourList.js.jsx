@@ -15,11 +15,9 @@ var TourList = React.createClass({
         <div>
           <h3>My Tour Guide</h3>
 
-          <form action="tours" method="post">
+          <form action="tours" method="POST">
             <input type="submit" value="Create Tour" className="create_tour_button btn btn-info" onClick={this.handleClick}></input>
           </form>
-
-          {/*<button type="button" className="create_tour_button btn btn-info" onClick={this.handleClick}>Create Tour</button>*/}
 
          <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick}>Save Tour</button>
 
