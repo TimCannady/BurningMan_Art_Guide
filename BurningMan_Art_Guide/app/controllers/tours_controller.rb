@@ -7,7 +7,7 @@ class ToursController < ApplicationController
   end
 
   def create
-    new_tour = Tour.new(params[:tour])
+    tour = Tour.new(params[:tour])
 
     installation_1 = Installation.create(
         installation_name: "tims installation",
@@ -33,8 +33,9 @@ class ToursController < ApplicationController
         new_tour.installations << installation_3 #Installation.find(:id etc)
         new_tour.installations << installation_4 #Installation.find(:id etc)
       #end
-      tour_installations = TourInstallation.where(tour_id: new_tour.id)
-      p tour_installations
+
+      tour_installations = new_tour.installations
+
       render json: {
         tour: new_tour,
         tour_installations: tour_installations
@@ -43,6 +44,10 @@ class ToursController < ApplicationController
       render json: {error: 'fuck, tour not saved'}
     end
   end
+
+
+
+
 
   # def save ## does both create and save for now...
   #   @tour = Tour.create

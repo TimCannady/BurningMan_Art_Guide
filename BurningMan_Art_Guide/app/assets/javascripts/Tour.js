@@ -44,6 +44,7 @@ Tour.prototype.save = function(){
   var tour = this
   var params = {tour: this.attributes()};
   return App.request('post', '/tours', params).then(function(attributes){
+    console.log(attributes)
     tour.setAttributes(attributes);
     return tour;
   });
