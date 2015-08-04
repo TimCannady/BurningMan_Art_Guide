@@ -1,6 +1,6 @@
 class CreateToursInstallations < ActiveRecord::Migration
   def change
-    create_table :tours_installations do |t|
+    create_table :tour_installations do |t|
       t.integer :tour_id
       t.integer :installation_id
 

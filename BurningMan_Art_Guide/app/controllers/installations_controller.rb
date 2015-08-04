@@ -1,12 +1,11 @@
 class InstallationsController < ApplicationController
 
-
-
   def index
-    @art_installations = Installation.all
-    @art_installations = Installation.all
-    render 'installations/index'
-    # render json: @art_installations
+    installations = Installation.all
+    if params[:installation_ids]
+      installations = installations.where(id: params[:installation_ids])
+    end
+    render json: installations
   end
 
   def show

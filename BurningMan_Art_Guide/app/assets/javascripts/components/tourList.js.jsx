@@ -1,30 +1,34 @@
 var TourList = React.createClass({
 
-  handleClick: function(){
-    this.props.createTour({createdTour: true});
+  installations: function(){
+    var tour = this.props.tour
+    var installations = this.props.installations
+    return tour.installation_ids.map(function(id){
+      return installations.find(function(installation){
+        return installation.id == id;
+      })
+    });
   },
 
   render: function(){
-    that = this;
-    var tourInstallations = this.props.installations.map(function(installation,index){
-        return <TourItem key={index} installation_name={installation.installation_name} installation_description={installation.installation_description} artist_name={installation.artist_name} artist_location={installation.artist_location} url={installation.url} photo_url={installation.photo_url} email={installation.email} donate_link={installation.donate_link} />
-    })
+    console.log('RERENDERING RoutList', this.state, this.props)
+    var tourInstallations, tour = this.props.tour;
+
+    if (tour){
+      tourInstallations = this.installations().map(function(installation,index){
+        return React.createElement(TourItem,{
+          key: index,
+          tour: tour,
+          installation: installation
+        });
+      });
+    }
 
     return(
-      <div className="col-md-4 tour_box">
-        <h3>My Tour Guide</h3>
-        <div>
-
-          <form action="#" /*method="post"*/>
-            <input type="button" /*type="action"*/ value="Create Tour" className="create_tour_button btn btn-info" onClick={this.handleClick}></input>
-          </form>
-
-         <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick}>Save Tour</button>
-
-        </div>
+      <div className="TourList">
         {tourInstallations}
       </div>
-      );
+    );
   }
 });
 
