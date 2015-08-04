@@ -30,9 +30,8 @@ TourEditor = React.createClass({
 
   saveTour: function(tour){
     this.state.tour.save().then(function(tour){
-      debugger
-      App.goto('/tours/'+tour.tour.id);
-    }.bind(this))
+      App.goto('/tours/'+tour.id);
+    })
   },
 
   renderInstallations: function(){

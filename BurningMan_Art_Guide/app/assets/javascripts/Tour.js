@@ -1,6 +1,13 @@
 Tour = function(attributes){
-  this.installations = [];
+  // this.installations = [];
+  this.installation_ids = [];
   this.setAttributes(attributes);
+};
+
+Tour.prototype.installations = function(attributes){
+  return this.installation_ids.map(function(id){
+    return {id:id}
+  });
 };
 
 Tour.prototype.setAttributes = function(attributes){
@@ -15,7 +22,7 @@ Tour.prototype.isPersisted = function(){
 Tour.prototype.attributes = function(){
   return {
     id: this.id,
-    installation_ids: this.installations.map(TO_ID),
+    installation_ids: this.installation_ids,
   };
 };
 
@@ -23,7 +30,7 @@ TO_ID = function(x){ return x.id };
 
 
 Tour.prototype.addInstallation = function(installation){
-  this.installations.push(installation);
+  this.installation_ids.push(installation.id);
   return this;
 }
 

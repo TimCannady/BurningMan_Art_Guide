@@ -4,7 +4,7 @@ var TourList = React.createClass({
     var tourInstallations, tour = this.props.tour;
 
     if (tour){
-      tourInstallations = tour.installations.map(function(installation,index){
+      tourInstallations = tour.installations().map(function(installation,index){
         // return React.createElement(RouteItem,{
         //   key: index,
 
