@@ -26,13 +26,21 @@ TourShowPage = React.createClass({
   render: function(){
     var content;
     if (this.state.installations){
-      // content = <UsersTour tour={this.state.tour} installations={this.state.installations} installation_name={this.state.tour.installation_name} photo_url={this.state.tour.photo_url} />;
-      content = (
-        <div>
-          <h1>TOUR ID: {this.state.tour.id}</h1>
-          <h3>with {this.state.installations.length} installations</h3>
-        </div>
-      )
+      var tour = this.state.tour
+      var artInstallations = this.state.installations.map(function(installation, index){
+        return React.createElement(InstallationItem,{
+          key: index,
+          tour: tour,
+          installation: installation
+        })
+      })
+      content = artInstallations
+      // content = (
+      //   <div>
+      //     <h1>TOUR ID: {this.state.tour.id}</h1>
+      //     <h3>with {this.state.installations.length} installations</h3>
+      //   </div>
+      // )
     }else{
       content = <div>Loading...</div>;
     }
