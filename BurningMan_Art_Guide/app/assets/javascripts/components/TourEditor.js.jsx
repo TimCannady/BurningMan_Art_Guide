@@ -29,7 +29,7 @@ TourEditor = React.createClass({
 
   saveTour: function(tour){
     this.state.tour.save().then(function(tour){
-      App.goto('/tours/'+tour.id);
+      App.goto('/tours/'+tour.tour.id);
     }.bind(this))
   },
 
@@ -48,7 +48,7 @@ TourEditor = React.createClass({
     );
   },
 
-  renderCreateOrSaveButton: function(){
+  renderCreateOrSaveBut: function(){
     if (!this.state.tour) return; {/*if we don't have a tour, then  display*/}
 
     action = this.state.tour.isPersisted() ? 'Save' : 'Create'
@@ -71,7 +71,7 @@ TourEditor = React.createClass({
           <h3>My Tour Guide</h3>
           <div>
             {this.renderNewTourButton()}
-            {this.renderCreateOrSaveButton()}
+            {this.renderCreateOrSaveBut()}
 
           </div>
           <TourList tour={this.state.tour} />

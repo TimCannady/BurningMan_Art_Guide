@@ -33,13 +33,12 @@ Tour.find = function(tour_id){
   });
 };
 
-// Tour.prototype.create = function(){
-//   var tour = this;
-//   return App.request('post','/tours').then(function(attributes){
-//     // Object.assign(tour, attributes);
-//     tour
-//   });
+// TourInstallations.find = function(tour_id){
+//   return App.request('get', '/tours_installations/'+tour_id).then(function(attributes){
+//     return new TourInstallation(attributes)
+//   })
 // };
+
 
 Tour.prototype.save = function(){
   var tour = this
@@ -49,4 +48,15 @@ Tour.prototype.save = function(){
     return tour;
   });
 };
+
+
+
+// Tour.prototype.create = function(){
+//   var tour = this;
+//   return App.request('post','/tours').then(function(attributes){
+//     // Object.assign(tour, attributes);
+//     tour
+//   });
+// };
+
 
