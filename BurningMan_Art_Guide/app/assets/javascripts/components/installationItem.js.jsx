@@ -25,9 +25,6 @@ var InstallationItem = React.createClass({
         <a href={installation.donate_link}> Donate </a>
         <br/>
 
-
-
-
         <button type="button" className="add_tour_button btn btn-info" onClick={this.handleClick} disabled={!this.props.tour} >
           Add To Tour Guide
         </button>
