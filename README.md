@@ -45,16 +45,20 @@ Testing and Scraping:
 
 5) React handles HTML structure and DOM interaction
 
-I chose React because I liked that it was modular and not too large of an undertaking. I also like that it combines most of the front-end behavior into single components, as opposed to having code spread across multiple files (html, css, js).
+I chose React because I liked that it was modular and not too large of an undertaking. I also like that it combines most of the front-end behavior into single components, as opposed to having code spread across multiple files (html, css, js). I chose Nokogiri because I think scraping is really powerful in the absence of an API.
 
-The challenge I faced had to do with connecting the front-end to the back-end. I had to go from Ruby to JavaScript to Ruby and back. And via asynchronous requests, which I'm comfortable with but was using a new technique with. I'm also somewhat new to JavaScript in general, so keeping everything object-oriended was a fun challenge as well.
+Beyond learning these technologies in general, some specific things I learned included:
+* React: passing props and state between a multi-branched tree
+* React: using OOJS
+* React: using Ajax
+* Ajax: using Ajax in a new way, accompanied with JS promises
 
-I chose Nokogiri because I think scraping is really powerful in the absence of an API.
+I also enjoyed learning "how it all comes together." How to use multiple technologies (and languages) in a real-world app.
+
+The challenges I faced had to do with connecting the front-end to the back-end. I had to go from Ruby to JavaScript to Ruby and back. And via asynchronous requests, which I'm comfortable with but was using a new technique with. I'm also somewhat new to JavaScript in general, so keeping everything object-oriended was a fun challenge as well.
+
 
 I'd use React again. It requires a little more setup than just doing things with jQuery, so it might make the most sense for exceptionally-light projects. But beyond that, I think it's a great technology.
-
-Beyond learning React, Nokogiri, Capybara and Rails, I also really just learned "how it all comes together." How to use multiple technologies, and languages, in a functioning app.
-
 
 ## Invitation
 
