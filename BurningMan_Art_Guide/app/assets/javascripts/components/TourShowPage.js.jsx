@@ -10,6 +10,7 @@ TourShowPage = React.createClass({
     }
   },
 
+ /*--- Tour.find is a method defined in Tour.js ---*/
   componentDidMount: function(){
     var component = this
     Tour.find(this.props.tour_id).then(function(tour){

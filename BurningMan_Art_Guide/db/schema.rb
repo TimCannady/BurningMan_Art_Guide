@@ -34,16 +34,16 @@ ActiveRecord::Schema.define(version: 20150802235346) do
     t.datetime "updated_at",               null: false
   end
 
-  create_table "tours", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "tours_installations", force: :cascade do |t|
+  create_table "tour_installations", force: :cascade do |t|
     t.integer  "tour_id"
     t.integer  "installation_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "tours", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

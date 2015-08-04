@@ -7,11 +7,20 @@ class ToursController < ApplicationController
   end
 
   def create
-    tour = Tour.new(params[:tour])
-    if tour.save
-      render json: tour
+    new_tour = Tour.new(params[:tour])
+
+    installation_1 = Installation.create()
+    installation_2 = Installation.create()
+
+    if new_tour.save
+
+
+      #loop for params grabbing id's
+        new_tour.installations << installation_1 #Installation.find(:id etc)
+      #end
+      render json: new_tour
     else
-      render json: {error: 'fuck'}
+      render json: {error: 'fuck, tour not saved'}
     end
   end
 

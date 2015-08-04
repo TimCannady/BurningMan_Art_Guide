@@ -32,6 +32,7 @@ Tour.find = function(tour_id){
     return new Tour(attributes);
   });
 };
+
 // Tour.prototype.create = function(){
 //   var tour = this;
 //   return App.request('post','/tours').then(function(attributes){
