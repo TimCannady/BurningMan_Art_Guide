@@ -7,7 +7,7 @@ TourShowPage = React.createClass({
   getInitialState: function(){
     return {
       tour: null,
-      tour_installations: null
+      installations: null
     }
   },
 
@@ -16,24 +16,29 @@ TourShowPage = React.createClass({
     var component = this
     Tour.find(this.props.tour_id).then(function(tour){
       component.setState({tour: tour});
+      tour.installations().then(function(installations){
+        component.setState({installations: installations});
+      });
     });
-    TourInstallations.find(this.props.tour_id).then(function(tour_installations){
-      component.setState({tour_installations: tour_installations});
-    });
+
   },
 
   render: function(){
     var content;
-    if (this.state.tour){
-      content = <UsersTour tour={this.state.tour} tour_installations={this.state.tour_installations} installation_name={this.state.tour.installation_name} photo_url={this.state.tour.photo_url} />;
+    if (this.state.installations){
+      // content = <UsersTour tour={this.state.tour} installations={this.state.installations} installation_name={this.state.tour.installation_name} photo_url={this.state.tour.photo_url} />;
+      content = (
+        <div>
+          <h1>TOUR ID: {this.state.tour.id}</h1>
+          <h3>with {this.state.installations.length} installations</h3>
+        </div>
+      )
     }else{
       content = <div>Loading...</div>;
     }
+    console.log('TourShowPage rendered', this.state, this.props)
     return (
       <div class="tour-show-page">
-        tour: {this.state.tour}
-        <br/>
-        installations: {this.state.tour_installations}
         {content}
       </div>
     )

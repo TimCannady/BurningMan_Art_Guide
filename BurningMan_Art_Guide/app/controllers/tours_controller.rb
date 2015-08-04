@@ -9,7 +9,7 @@ class ToursController < ApplicationController
   def create
     tour = Tour.new(tour_params)
     if tour.save
-      render json: tour.as_json(methods:[:installation_ids])
+      render json: tour
     else
       render json: {error: tour.errors.full_messages.join(','), status: 400}
     end
@@ -27,6 +27,8 @@ class ToursController < ApplicationController
   private
 
   def tour_params
-    params.require(:tour).permit(:installation_ids)
+    params.require(:tour).permit(
+      installation_ids: []
+    )
   end
 end

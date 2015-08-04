@@ -75,7 +75,7 @@ TourEditor = React.createClass({
             {this.renderCreateOrSaveButton()}
 
           </div>
-          <TourList tour={this.state.tour} />
+          <TourList tour={this.state.tour} installations={this.state.installations} />
         </div>
 
       </div>

@@ -4,11 +4,16 @@ Tour = function(attributes){
   this.setAttributes(attributes);
 };
 
+// Usage tour.installations().then(function(installations){ … })
 Tour.prototype.installations = function(attributes){
-  return this.installation_ids.map(function(id){
-    return {id:id}
+  var tour = this;
+  if (this.installation_ids.length === 0){ return Promise.resolve([]); }
+  if (tour._installations) { return Promise.resolve(tour._installations); }
+  return Installation.find(this.installation_ids).then(function(installations){
+    return tour._installations = installations;
   });
 };
+
 
 Tour.prototype.setAttributes = function(attributes){
   $.extend(this, attributes);
@@ -31,6 +36,9 @@ TO_ID = function(x){ return x.id };
 
 Tour.prototype.addInstallation = function(installation){
   this.installation_ids.push(installation.id);
+  if (this._installations){
+    this._installations.push(installation);
+  }
   return this;
 }
 
