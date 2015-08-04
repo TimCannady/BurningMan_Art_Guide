@@ -5,7 +5,7 @@ Browse the official art installations at the 2015 Burning Man festival. You can 
 
 ## Demo
 
-[2015 BurningMan Art Guide & Tour Generator](http://www.heroku.com)
+[2015 BurningMan Art Guide & Tour Generator](https://limitless-sands-7552.herokuapp.com/)
 
 ## Technologies
 
