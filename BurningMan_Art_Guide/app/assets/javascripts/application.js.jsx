@@ -6,7 +6,7 @@
 
 
 $(function(){
-  React.render( <App/>, document.body);
+  React.render( <AppComponent />, document.body);
 });
 
 
