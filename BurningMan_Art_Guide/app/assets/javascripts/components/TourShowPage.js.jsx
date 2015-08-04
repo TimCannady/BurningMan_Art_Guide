@@ -20,7 +20,7 @@ TourShowPage = React.createClass({
   render: function(){
     var content;
     if (this.state.tour){
-      content = <UsersTour tour={this.state.tour} />;
+      content = <UsersTour tour={this.state.tour} installation_name={this.state.tour.installation_name} photo_url={this.state.tour.photo_url} />;
     }else{
       content = <div>Loading...</div>;
     }
