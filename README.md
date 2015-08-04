@@ -30,14 +30,19 @@ Testing and Scraping:
 ## How it Works
 
 1) Nokogiri scrapes the art at [BurningMan.org](http://burningman.org/event/brc/2015-art-installations/)
+
 2) Ruby uses four models:
   * Collection (the scraped art)
   * Installation (an individual art installation)
   * Tour (a user-generated tour)
   * Tour_Installation (a join table between the many-to-many Tour <-> Installation relationship)
+
 3) The DB is supported by Postgresql
+
 4) Rails supports the routing and controllers
+
 5) JavaScript supports the one-page nature
+
 5) React handles HTML structure and DOM interaction
 
 I chose React because I liked that it was modular and not too large of an undertaking. I also like that it combines most of the front-end behavior into single components, as opposed to having code spread across multiple files (html, css, js).
