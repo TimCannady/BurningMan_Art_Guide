@@ -93,7 +93,7 @@ https://www.youtube.com/watch?v=VsVwMrEuaoY
 
 https://www.youtube.com/watch?v=kTSsZrub5iE
 
-htps://www.codementor.io/reactjs/tutorial/react-vs-angularjs#/
+https://www.codementor.io/reactjs/tutorial/react-vs-angularjs#/
 
 http://www.quora.com/Is-React-killing-Angular
 
