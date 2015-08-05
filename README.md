@@ -74,6 +74,7 @@ This project is open-source, so please feel free to clone, tinker, refactor, bre
 ![Appstructure](http://i.imgur.com/clJ9C6G.png)
 
 **React tree:**
+
 ![Reacttree](http://i.imgur.com/jgnWM8D.png)
 
 **Homepage wireframe:**
