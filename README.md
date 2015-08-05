@@ -7,9 +7,12 @@ Browse the official art installations at the 2015 Burning Man festival. You can 
 
 [2015 BurningMan Art Guide & Tour Generator](https://limitless-sands-7552.herokuapp.com/)
 
+## Webcast
+[Webcast](https://youtu.be/WOebte7lBjA)
+
 ## Technologies
 
-This was a pet project for learning new technologies. I've listed all below and bloded those which were either new or unfamiliar:
+This was a pet project for learning new technologies. I've listed all below and bolded those which were either new or unfamiliar:
 
 Frontend:
 * HTML + CSS
@@ -55,10 +58,10 @@ Beyond learning these technologies in general, some specific things I learned in
 
 I also enjoyed learning "how it all comes together." How to use multiple technologies (and languages) in a real-world app.
 
-The challenges I faced had to do with connecting the front-end to the back-end. I had to go from Ruby to JavaScript to Ruby and back. And via asynchronous requests, which I'm comfortable with but was using a new technique with. I'm also somewhat new to JavaScript in general, so keeping everything object-oriended was a fun challenge as well.
+The challenges I faced had to do with connecting the front-end to the back-end. I had to go from Ruby to JavaScript to Ruby and back. And via asynchronous requests, which I'm comfortable with but was using a new technique with. I'm also somewhat new to JavaScript in general, so keeping everything object-oriented was a fun challenge as well.
 
 
-I'd use React again. It requires a little more setup than just doing things with jQuery, so it might make the most sense for exceptionally-light projects. But beyond that, I think it's a great technology.
+I'd use React again. It requires a little more setup than just doing things with jQuery, so it might make less sense for exceptionally-light projects. Beyond that I think it's great.
 
 ## Invitation
 

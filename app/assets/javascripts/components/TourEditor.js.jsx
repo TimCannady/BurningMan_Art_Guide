@@ -61,12 +61,12 @@ TourEditor = React.createClass({
 
       <div class="TourEditor">
 
-        <div className="col-md-8 installation_box">  {/* ------INSTALLATIONS BOX--------- */}
+        <div className="col-md-8 installation_box">  {/* ------INSTALLATIONS LIST--------- */}
           <h3>Art Installations</h3>
           {this.renderInstallations()}
         </div>
 
-        <div className="col-md-4 tour_box">  {/* ---------TOUR BOX----------- */}
+        <div className="col-md-4 tour_box">  {/* ---------TOUR LIST----------- */}
           <h3>My Tour Guide</h3>
           <div>
             {this.renderNewTourButton()}
