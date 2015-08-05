@@ -15,6 +15,7 @@
  */
 
  body{
+  background-image: url(http://i.imgur.com/QMpjuV4.jpg);
   /*background-image: url(image_path('bm.jpg'));*/
   /*background-image: url('/assets/bm.jpg');*/
   background-image: asset_path('bm.jpg');
