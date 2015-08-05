@@ -66,6 +66,14 @@ I'd use React again. It requires a little more setup than just doing things with
 
 This project is open-source, so please feel free to clone, tinker, refactor, break and rebuild, submit pull requests, issues or feature ideas. Feel free to get in touch [on Twitter](https://twitter.com/TCannadySF)!
 
+To setup locally:
+
+* fork + clone
+* bundle install
+* bundle exec rake db:create db:migrate db:seed
+* bundle exec rails s
+* browser -> localhost:3000
+
 ## References
 
 **Schema:**
