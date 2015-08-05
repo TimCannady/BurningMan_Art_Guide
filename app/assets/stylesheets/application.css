@@ -15,19 +15,16 @@
  */
 
  body{
-  background-image: url(image_path('bm.jpg'));
+  /*background-image: url(image_path('bm.jpg'));*/
   /*background-image: url('/assets/bm.jpg');*/
-  /*background-image: url('bm.jpg');*/
+  background-image: url('bm.jpg');
   background-size: 100%;
   background-attachment: fixed;
-
  }
 
  .body_wrapper{
   /*text-align: center;*/
  }
-
-
 
  .installation_box{
   /*border: 1px solid lightgrey;*/
