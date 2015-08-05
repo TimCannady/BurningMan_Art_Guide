@@ -3,11 +3,10 @@
 Browse the official art installations at the 2015 Burning Man festival. You can discover new pieces, read their meaning, visit the artist's website and donate to show support. For the more adventurous: create a 'tour guide' to save the pieces you hope to find this year!
 
 
-## Demo
+## Demo & Webcast
 
 [2015 BurningMan Art Guide & Tour Generator](https://limitless-sands-7552.herokuapp.com/)
 
-## Webcast
 [Webcast](https://youtu.be/WOebte7lBjA)
 
 ## Technologies
