@@ -8,7 +8,4 @@ class InstallationsController < ApplicationController
     render json: installations
   end
 
-  def show
-  end
-
 end

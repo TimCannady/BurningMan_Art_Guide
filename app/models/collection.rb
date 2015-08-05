@@ -1,16 +1,13 @@
 class Collection < ActiveRecord::Base
 
-    # attr_accessor :installations
-
-    def query_all_installations(html_file) ## parse every installations
+    def query_all_installations(html_file) # parse every installations
       html_file.search('.newitem').map
     end
 
-    def installation_creator(html_file,art_collection) ## create an installation object for each art installation
+    def installation_creator(html_file,art_collection) ##create an installation object for each art installation
       array_of_art = query_all_installations(html_file)
       array_of_art.each do |installation|
         content_hash = {
-          # :content => installation,
           :installation_name => get_installation_name(installation),
           :installation_description => get_installation_description(installation),
           :artist_name => get_artist_name(installation),

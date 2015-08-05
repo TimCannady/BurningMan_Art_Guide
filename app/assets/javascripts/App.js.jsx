@@ -19,7 +19,6 @@ App.request = function(method, path, data){
   });
 };
 
-
 App.router = function(path){
   if (path === '/')                          return <HomePage />;
   if (path.match(/^\/tours\/new$/))          return <NewTourPage />;
@@ -34,5 +33,3 @@ App.goto = function(path){
   history.pushState({}, '', path);
   $(window).trigger('pushstate');
 };
-
-

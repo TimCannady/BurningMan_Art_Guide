@@ -48,7 +48,3 @@ class React::JSX::Template
   end
 
 end
-
-
-
-

@@ -31,13 +31,3 @@ var TourList = React.createClass({
     );
   }
 });
-
-
-// ---------Steps to save a tour----------- //
-// when a user clicks the Save Tour button,
-// the tourGuide state houses all the installations the user added to their tour.
-// package that up and POST it to "/tours." This triggers the Tour controller where
-// it will generate a new Tour object.
-// I'm not sure how it will receive the tourGuide state. Format, params, etc.
-// Create a new Tour object, redirect the user to the page and give them a link so
-// they can return to it.

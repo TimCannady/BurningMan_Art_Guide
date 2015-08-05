@@ -43,15 +43,13 @@ TourEditor = React.createClass({
 
   renderNewTourButton: function(){
     if (this.state.tour) return;
-
     return (
       <ActionLink className="create_tour_button btn btn-info" href="/tours/new"> New Tour </ActionLink>
     );
   },
 
   renderCreateOrSaveButton: function(){
-    if (!this.state.tour) return; {/*if we don't have a tour, then  display*/}
-
+    if (!this.state.tour) return;
     action = this.state.tour.isPersisted() ? 'Save' : 'Create'
     return (
       <ActionLink className="add_tour_button btn btn-info" onClick={this.saveTour}> {action} Tour</ActionLink>
@@ -73,7 +71,6 @@ TourEditor = React.createClass({
           <div>
             {this.renderNewTourButton()}
             {this.renderCreateOrSaveButton()}
-
           </div>
           <TourList tour={this.state.tour} installations={this.state.installations} />
         </div>

@@ -14,7 +14,6 @@ var InstallationList = React.createClass({
 
     return (
       <div class="InstallationList">
-        {/*{alert(this.props.createdTour)}*/}
         {artInstallations}
       </div>
     );

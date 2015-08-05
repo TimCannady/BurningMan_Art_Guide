@@ -1,10 +1,8 @@
 Tour = function(attributes){
-  // this.installations = [];
   this.installation_ids = [];
   this.setAttributes(attributes);
 };
 
-// Usage tour.installations().then(function(installations){ … })
 Tour.prototype.installations = function(attributes){
   var tour = this;
   if (this.installation_ids.length === 0){ return Promise.resolve([]); }
@@ -33,7 +31,6 @@ Tour.prototype.attributes = function(){
 
 TO_ID = function(x){ return x.id };
 
-
 Tour.prototype.addInstallation = function(installation){
   this.installation_ids.push(installation.id);
   if (this._installations){
@@ -48,13 +45,6 @@ Tour.find = function(tour_id){
   });
 };
 
-// TourInstallations.find = function(tour_id){
-//   return App.request('get', '/tours_installations/'+tour_id).then(function(attributes){
-//     return new TourInstallation(attributes)
-//   })
-// };
-
-
 Tour.prototype.save = function(){
   var tour = this
   var params = {tour: this.attributes()};
@@ -64,15 +54,3 @@ Tour.prototype.save = function(){
     return tour;
   });
 };
-
-
-
-// Tour.prototype.create = function(){
-//   var tour = this;
-//   return App.request('post','/tours').then(function(attributes){
-//     // Object.assign(tour, attributes);
-//     tour
-//   });
-// };
-
-

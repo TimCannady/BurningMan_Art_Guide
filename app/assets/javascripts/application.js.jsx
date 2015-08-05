@@ -5,10 +5,6 @@
 //= require_tree .
 //= require_self
 
-
 $(function(){
   React.render( <AppComponent />, document.body);
 });
-
-
-

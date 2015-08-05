@@ -1,7 +1,6 @@
 class CreateInstallations < ActiveRecord::Migration
   def change
     create_table :installations do |t|
-      # t.string :content
       t.string :installation_name
       t.string :installation_description
       t.string :artist_name
