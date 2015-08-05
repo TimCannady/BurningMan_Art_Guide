@@ -66,17 +66,18 @@ This project is open-source, so please feel free to clone, tinker, refactor, bre
 
 ## References
 
-Schema:
+**Schema:**
 ![Schema](http://i.imgur.com/um2gLqs.png)
 
-Homepage wireframe:
+**Homepage wireframe:**
 ![Wireframe](http://i.imgur.com/M36zMCM.png)
 
-General app structure:
+**General app structure:**
 ![Appstructure](http://i.imgur.com/clJ9C6G.png)
 
-React tree:
+**React tree:**
 ![Reacttree](http://i.imgur.com/jgnWM8D.png)
+
 
 **Docs**
 
