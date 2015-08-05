@@ -58,6 +58,7 @@ Tour.find = function(tour_id){
 Tour.prototype.save = function(){
   var tour = this
   var params = {tour: this.attributes()};
+  debugger
   return App.request('post', '/tours', params).then(function(attributes){
     console.log(attributes)
     tour.setAttributes(attributes);

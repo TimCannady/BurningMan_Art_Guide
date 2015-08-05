@@ -15,15 +15,6 @@ class ToursController < ApplicationController
     end
   end
 
-
-
-
-
-  # def save ## does both create and save for now...
-  #   @tour = Tour.create
-  #   @tour << params
-  #   render "tours/#{@tour.id}"
-  # end
   private
 
   def tour_params

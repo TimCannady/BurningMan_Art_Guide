@@ -5,7 +5,7 @@ TourEditor = React.createClass({
   },
 
   getInitialState: function(){
-    console.log('tour:', this.props.tour)
+    // console.log('tour:', this.props.tour)
     return {
       installations: null,
       tour: this.props.tour,

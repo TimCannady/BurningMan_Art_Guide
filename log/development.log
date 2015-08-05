@@ -34947,3 +34947,381 @@ Processing by InstallationsController#index as JSON
   Parameters: {"installation_ids"=>["1", "5", "12", "14", "17", "18"]}
   [1m[36mInstallation Load (0.3ms)[0m  [1mSELECT "installations".* FROM "installations" WHERE "installations"."id" IN (1, 5, 12, 14, 17, 18)[0m
 Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tours/new" for ::1 at 2015-08-04 20:52:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ClientAppController#show as HTML
+  Parameters: {"path"=>"tours/new"}
+  Rendered client_app/show.html.erb (619.8ms)
+Completed 200 OK in 627ms (Views: 626.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/array-find.self-661c3ed2447af8fb29936dafe2733357b2c99fafeeb6e7156faf6da2e413db2e.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/tour.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/application.self-729e11b82877554800e547a107593c35d09161ccfd897fb3b5b425ed9fbea54c.css?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/HomePage.self-038c8b18711fbb127d6938e506743634983e25a9643556ba08e24653933d4bbf.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/ActionLink.self-5d0d69aacd97d7a77447b8adcc07f6d45fb1f687f7e08d4df69042eebe210f6a.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/NewTourPage.self-e27b61d68d1987508d44e67e27bff9886df0ef087b4fb1959882e04640a7e8b9.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/TourEditPage.self-8e95ec64e812b8e03b470784d7f3019a71aff01e430d9235644afe9baa1d8f74.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/TourEditor.self-225111bfcdc0926e01f42978f42dfe953dfcfa1611a11b90e4cbfaf946a383fe.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/TourSavedPage.self-a210c7f22f6c2c1442e52707836a3f49fc80e62a719166adb7511430f6b4f7cf.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/TourShowPage.self-8d76286044b76ad51b7cdef86fda9421a144f4357a33df8e5c8b0fb0167e3302.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/UsersTourItem.self-e11dc9b983a96e41a3ff194c1957b403d8bd2560b5de1ee2b549841153f83834.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/app_component.self-45558f32e1d07c56289a49e0224fe27c954ad7c34ea6e4aa345b9ae4c217452a.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/installationItem.self-73beaa3182701430c59fedd58b35a6041213215c467caff204d040418f529790.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/installationList.self-a2d758ef45101f8871933238c9a92c04d055053d03a69d2afbde710fb631b3b3.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/tourItem.self-69ac5dda0184ea002cdaef1ce6f2a38f17b23b36aa5cde5cbc86647c458d7c6f.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/components/tourList.self-797e52637b537df7199a5bd0735754a080277cf36a8523969f31a6aad7d75932.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/App.self-47e3ab9bb83d3ce48c948143fa04b0e0098c68cd4dae7f46480b74e893f38401.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/Installation.self-7ad81c372aec42c049419442b20cfec52f360c350e5e0a914dc38e56f6f86f0a.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/Tour.self-876a45d2a75775e0f4a07d5631afe44aefb9681df9be61dce79668d1f925935c.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/assets/application.self-df049d30d6bd7a52f3777d4c359d81f5428435da82c112f76396cfbed30d1052.js?body=1" for ::1 at 2015-08-04 20:53:00 -0700
+
+
+Started GET "/installations" for ::1 at 2015-08-04 20:53:00 -0700
+Processing by InstallationsController#index as JSON
+  [1m[35mInstallation Load (0.9ms)[0m  SELECT "installations".* FROM "installations"
+Completed 200 OK in 87ms (Views: 61.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 20:53:07 -0700
+Processing by ClientAppController#show as HTML
+  Rendered client_app/show.html.erb (170.7ms)
+Completed 200 OK in 178ms (Views: 177.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/installations" for ::1 at 2015-08-04 20:53:07 -0700
+Processing by InstallationsController#index as JSON
+  [1m[36mInstallation Load (1.6ms)[0m  [1mSELECT "installations".* FROM "installations"[0m
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 20:57:29 -0700
+Processing by ClientAppController#show as HTML
+  Rendered client_app/show.html.erb (619.4ms)
+Completed 200 OK in 624ms (Views: 623.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tour.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/application.self-729e11b82877554800e547a107593c35d09161ccfd897fb3b5b425ed9fbea54c.css?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/array-find.self-661c3ed2447af8fb29936dafe2733357b2c99fafeeb6e7156faf6da2e413db2e.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/ActionLink.self-5d0d69aacd97d7a77447b8adcc07f6d45fb1f687f7e08d4df69042eebe210f6a.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/HomePage.self-038c8b18711fbb127d6938e506743634983e25a9643556ba08e24653933d4bbf.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/NewTourPage.self-e27b61d68d1987508d44e67e27bff9886df0ef087b4fb1959882e04640a7e8b9.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/TourEditPage.self-8e95ec64e812b8e03b470784d7f3019a71aff01e430d9235644afe9baa1d8f74.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/TourEditor.self-225111bfcdc0926e01f42978f42dfe953dfcfa1611a11b90e4cbfaf946a383fe.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/TourSavedPage.self-a210c7f22f6c2c1442e52707836a3f49fc80e62a719166adb7511430f6b4f7cf.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/TourShowPage.self-8d76286044b76ad51b7cdef86fda9421a144f4357a33df8e5c8b0fb0167e3302.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/UsersTourItem.self-e11dc9b983a96e41a3ff194c1957b403d8bd2560b5de1ee2b549841153f83834.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/app_component.self-45558f32e1d07c56289a49e0224fe27c954ad7c34ea6e4aa345b9ae4c217452a.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/installationItem.self-73beaa3182701430c59fedd58b35a6041213215c467caff204d040418f529790.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/installationList.self-a2d758ef45101f8871933238c9a92c04d055053d03a69d2afbde710fb631b3b3.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/tourItem.self-69ac5dda0184ea002cdaef1ce6f2a38f17b23b36aa5cde5cbc86647c458d7c6f.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/components/tourList.self-797e52637b537df7199a5bd0735754a080277cf36a8523969f31a6aad7d75932.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/App.self-47e3ab9bb83d3ce48c948143fa04b0e0098c68cd4dae7f46480b74e893f38401.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/Installation.self-7ad81c372aec42c049419442b20cfec52f360c350e5e0a914dc38e56f6f86f0a.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/Tour.self-876a45d2a75775e0f4a07d5631afe44aefb9681df9be61dce79668d1f925935c.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/assets/application.self-df049d30d6bd7a52f3777d4c359d81f5428435da82c112f76396cfbed30d1052.js?body=1" for ::1 at 2015-08-04 20:57:29 -0700
+
+
+Started GET "/installations" for ::1 at 2015-08-04 20:57:29 -0700
+Processing by InstallationsController#index as JSON
+  [1m[35mInstallation Load (0.5ms)[0m  SELECT "installations".* FROM "installations"
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-04 20:58:21 -0700
+Processing by ClientAppController#show as HTML
+  Rendered client_app/show.html.erb (61.0ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/array-find.self-661c3ed2447af8fb29936dafe2733357b2c99fafeeb6e7156faf6da2e413db2e.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/application.self-729e11b82877554800e547a107593c35d09161ccfd897fb3b5b425ed9fbea54c.css?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/tour.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/ActionLink.self-5d0d69aacd97d7a77447b8adcc07f6d45fb1f687f7e08d4df69042eebe210f6a.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/HomePage.self-038c8b18711fbb127d6938e506743634983e25a9643556ba08e24653933d4bbf.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/NewTourPage.self-e27b61d68d1987508d44e67e27bff9886df0ef087b4fb1959882e04640a7e8b9.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/TourEditPage.self-8e95ec64e812b8e03b470784d7f3019a71aff01e430d9235644afe9baa1d8f74.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/TourEditor.self-225111bfcdc0926e01f42978f42dfe953dfcfa1611a11b90e4cbfaf946a383fe.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/TourSavedPage.self-a210c7f22f6c2c1442e52707836a3f49fc80e62a719166adb7511430f6b4f7cf.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/TourShowPage.self-8d76286044b76ad51b7cdef86fda9421a144f4357a33df8e5c8b0fb0167e3302.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/UsersTourItem.self-e11dc9b983a96e41a3ff194c1957b403d8bd2560b5de1ee2b549841153f83834.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/app_component.self-45558f32e1d07c56289a49e0224fe27c954ad7c34ea6e4aa345b9ae4c217452a.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/installationItem.self-73beaa3182701430c59fedd58b35a6041213215c467caff204d040418f529790.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/installationList.self-a2d758ef45101f8871933238c9a92c04d055053d03a69d2afbde710fb631b3b3.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/tourItem.self-69ac5dda0184ea002cdaef1ce6f2a38f17b23b36aa5cde5cbc86647c458d7c6f.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/components/tourList.self-797e52637b537df7199a5bd0735754a080277cf36a8523969f31a6aad7d75932.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/App.self-47e3ab9bb83d3ce48c948143fa04b0e0098c68cd4dae7f46480b74e893f38401.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/Installation.self-7ad81c372aec42c049419442b20cfec52f360c350e5e0a914dc38e56f6f86f0a.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/Tour.self-876a45d2a75775e0f4a07d5631afe44aefb9681df9be61dce79668d1f925935c.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/assets/application.self-df049d30d6bd7a52f3777d4c359d81f5428435da82c112f76396cfbed30d1052.js?body=1" for ::1 at 2015-08-04 20:58:21 -0700
+
+
+Started GET "/installations" for ::1 at 2015-08-04 20:58:21 -0700
+Processing by InstallationsController#index as JSON
+  [1m[36mInstallation Load (0.8ms)[0m  [1mSELECT "installations".* FROM "installations"[0m
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/installations" for ::1 at 2015-08-04 20:58:23 -0700
+Processing by InstallationsController#index as JSON
+  [1m[35mInstallation Load (1.3ms)[0m  SELECT "installations".* FROM "installations"
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/tours/new" for ::1 at 2015-08-04 20:59:59 -0700
+Processing by ClientAppController#show as HTML
+  Parameters: {"path"=>"tours/new"}
+  Rendered client_app/show.html.erb (52.1ms)
+Completed 200 OK in 56ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tour.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/ActionLink.self-5d0d69aacd97d7a77447b8adcc07f6d45fb1f687f7e08d4df69042eebe210f6a.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/application.self-729e11b82877554800e547a107593c35d09161ccfd897fb3b5b425ed9fbea54c.css?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/array-find.self-661c3ed2447af8fb29936dafe2733357b2c99fafeeb6e7156faf6da2e413db2e.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/HomePage.self-038c8b18711fbb127d6938e506743634983e25a9643556ba08e24653933d4bbf.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/NewTourPage.self-e27b61d68d1987508d44e67e27bff9886df0ef087b4fb1959882e04640a7e8b9.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/TourEditPage.self-8e95ec64e812b8e03b470784d7f3019a71aff01e430d9235644afe9baa1d8f74.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/TourEditor.self-225111bfcdc0926e01f42978f42dfe953dfcfa1611a11b90e4cbfaf946a383fe.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/TourSavedPage.self-a210c7f22f6c2c1442e52707836a3f49fc80e62a719166adb7511430f6b4f7cf.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/TourShowPage.self-8d76286044b76ad51b7cdef86fda9421a144f4357a33df8e5c8b0fb0167e3302.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/UsersTourItem.self-e11dc9b983a96e41a3ff194c1957b403d8bd2560b5de1ee2b549841153f83834.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/app_component.self-45558f32e1d07c56289a49e0224fe27c954ad7c34ea6e4aa345b9ae4c217452a.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/installationItem.self-73beaa3182701430c59fedd58b35a6041213215c467caff204d040418f529790.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/installationList.self-a2d758ef45101f8871933238c9a92c04d055053d03a69d2afbde710fb631b3b3.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/tourItem.self-69ac5dda0184ea002cdaef1ce6f2a38f17b23b36aa5cde5cbc86647c458d7c6f.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/components/tourList.self-797e52637b537df7199a5bd0735754a080277cf36a8523969f31a6aad7d75932.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/App.self-47e3ab9bb83d3ce48c948143fa04b0e0098c68cd4dae7f46480b74e893f38401.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/Installation.self-7ad81c372aec42c049419442b20cfec52f360c350e5e0a914dc38e56f6f86f0a.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/Tour.self-876a45d2a75775e0f4a07d5631afe44aefb9681df9be61dce79668d1f925935c.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/assets/application.self-df049d30d6bd7a52f3777d4c359d81f5428435da82c112f76396cfbed30d1052.js?body=1" for ::1 at 2015-08-04 20:59:59 -0700
+
+
+Started GET "/installations" for ::1 at 2015-08-04 20:59:59 -0700
+Processing by InstallationsController#index as JSON
+  [1m[36mInstallation Load (0.5ms)[0m  [1mSELECT "installations".* FROM "installations"[0m
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tours" for ::1 at 2015-08-04 21:00:00 -0700
+Processing by ToursController#create as JSON
+Can't verify CSRF token authenticity
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: tour):
+  app/controllers/tours_controller.rb:21:in `tour_params'
+  app/controllers/tours_controller.rb:10:in `create'
+
+
+  Rendered /Users/timcannady/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/timcannady/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/timcannady/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/timcannady/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (75.4ms)
+
+
+Started POST "/tours" for ::1 at 2015-08-04 21:00:04 -0700
+Processing by ToursController#create as JSON
+  Parameters: {"tour"=>{"installation_ids"=>["3", "2", "2"]}}
+Can't verify CSRF token authenticity
+  [1m[35mInstallation Load (0.5ms)[0m  SELECT "installations".* FROM "installations" WHERE "installations"."id" IN (3, 2)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tours" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2015-08-05 04:00:04.517868"], ["updated_at", "2015-08-05 04:00:04.517868"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tour_installations" ("installation_id", "tour_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["installation_id", 3], ["tour_id", 8], ["created_at", "2015-08-05 04:00:04.520249"], ["updated_at", "2015-08-05 04:00:04.520249"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tour_installations" ("installation_id", "tour_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["installation_id", 2], ["tour_id", 8], ["created_at", "2015-08-05 04:00:04.521759"], ["updated_at", "2015-08-05 04:00:04.521759"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "tour_installations" ("tour_id", "installation_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["tour_id", 8], ["installation_id", 2], ["created_at", "2015-08-05 04:00:04.524045"], ["updated_at", "2015-08-05 04:00:04.524045"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+Completed 200 OK in 127ms (Views: 0.8ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/tours/8" for ::1 at 2015-08-04 21:00:04 -0700
+Processing by ToursController#show as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mTour Load (0.4ms)[0m  [1mSELECT  "tours".* FROM "tours" WHERE "tours"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  SELECT "installations".id FROM "installations" INNER JOIN "tour_installations" ON "installations"."id" = "tour_installations"."installation_id" WHERE "tour_installations"."tour_id" = $1  [["tour_id", 8]]
+Completed 200 OK in 26ms (Views: 18.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/installations?installation_ids%5B%5D=2&installation_ids%5B%5D=2&installation_ids%5B%5D=3" for ::1 at 2015-08-04 21:00:04 -0700
+Processing by InstallationsController#index as JSON
+  Parameters: {"installation_ids"=>["2", "2", "3"]}
+  [1m[36mInstallation Load (0.3ms)[0m  [1mSELECT "installations".* FROM "installations" WHERE "installations"."id" IN (2, 2, 3)[0m
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)

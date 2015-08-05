@@ -19,12 +19,14 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'nokogiri'
 
-
 group :development, :test do
   gem 'rspec'
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'pry-byebug'
   gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
