@@ -5,7 +5,7 @@ TourEditor = React.createClass({
   },
 
   getInitialState: function(){
-    console.log('tour:', this.props.tour)
+    // console.log('tour:', this.props.tour)
     return {
       installations: null,
       tour: this.props.tour,
@@ -13,6 +13,7 @@ TourEditor = React.createClass({
   },
 
   componentDidMount: function(){
+    // I think this routes to installations#index
     $.getJSON('/installations').then(function(installations){
       this.setState({installations: installations})
     }.bind(this));

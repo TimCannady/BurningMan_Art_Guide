@@ -1,4 +1,4 @@
-class InstallationsController < ApplicationController
+ class InstallationsController < ApplicationController
 
   def index
     installations = Installation.all

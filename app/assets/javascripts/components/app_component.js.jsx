@@ -2,6 +2,7 @@ var AppComponent = React.createClass({
 
   getInitialState: function(){
     return {
+      //location.pathname is an HTML property that returns the pathname of the current url
       path: location.pathname,
     }
   },
